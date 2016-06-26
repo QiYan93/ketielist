@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/libs/bootstrap/css/bootstrap.min.css')
+    link(rel="stylesheet",href="/libs/ueditor/themes/default/_css/umeditor.css")
+    link(rel="stylesheet",href="/css/ueditor.css")
+    link(rel='stylesheet', href='/css/style.css')
+    script(src="/libs/jquery.min.js")
+    script(src="/libs/ueditor/umeditor.config.js")
+    script(src="/libs/ueditor/editor_api.js")
+    script(src="/libs/ueditor/lang/zh-cn/zh-cn.js")
+    script(src="/libs/bootstrap/js/bootstrap.min.js")
+  body
+    h1= title
+    button.btn.btn-sm.btn-primary#save 修改
+    input.form-control#name(placeholder='请输入名称')
+    script(type="text/plain" id="myEditor" style="width:1000px;height:240px;")
+    script(src="/js/edit.js")

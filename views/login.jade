@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1= title
+  form.form-horizontal
+    .form-group
+      label(for="inputEmail3" class="col-sm-2 control-label") 账号
+      .col-sm-10
+        input(type="email" class="form-control" id="account" placeholder="Email")
+    .form-group
+      label(for="inputEmail3" class="col-sm-2 control-label") 密码
+      .col-sm-10
+        input(type="password" class="form-control" id="password" placeholder="Password")
+    //- .form-group
+    //-   .col-sm-offset-2.col-sm-10
+    //-     .checkbox
+    //-       label
+    //-         input(type="checkbox") 
+    //-         | 记住密码
+    .form-group
+      .col-sm-offset-2.col-sm-10
+        input(type="button" class="btn btn-default" value="登录")
+  script(src="/js/login.js")

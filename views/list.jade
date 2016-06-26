@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+    button.btn.btn-sm.btn-primary#addDocument 新增 
+  table.table
+    thead
+      tr
+        th 序号
+        th 名称
+        th 时间
+        th 操作
+    tbody
+  script(src="/js/list.js")
